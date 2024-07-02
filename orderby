@@ -1,0 +1,14 @@
+select "car" from cars order by "cars"
+select "car" from cars order by "cylinders"
+select "car", "mpg", "cylinders", "weight"
+from cars
+order by "mpg", "cylinders"
+select "car", "mpg", "cylinders", "weight"
+from cars
+order by 2, 3
+select car , mpg , cylinders , weight
+from cars
+order by mpg asc
+select car , mpg , cylinders , weight
+from cars
+order by mpg desc, 3 asc
