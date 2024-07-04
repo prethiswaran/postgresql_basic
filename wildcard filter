@@ -1,0 +1,2 @@
+select car , mpg , cylinders , weight from cars where car like 'Ford%'
+select car , mpg , cylinders , weight from cars where car like 'SKylark___'
