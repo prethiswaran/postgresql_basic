@@ -1,0 +1,7 @@
+select name , joiningdate from studend where joiningdate = '2022-07-25'
+select name , joiningdate from studend where joiningdate > '2022-09-25'\
+select name , joiningdate from studend where joiningdate between '2022-08-01' and '2022-08-30'
+select name , extract(YEAR from "enddate") as "joined year" from studend
+select name , joiningdate from studend where extract(year from "enddate") = 2023
+select name , joiningdate from studend where extract(month from "joiningdate") = 8
+select name , joiningdate from studend where extract(year from "enddate") = 2023

@@ -1,0 +1,5 @@
+select car  ||'   : '|| weight from cars
+select "car" ||'   : '|| weight
+AS "car : weight" FROM cars
+select car , weight *1000 as "weight (game)" from cars
+select car , mpg / cylinders as "mpg/cyl" from cars 
