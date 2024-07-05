@@ -1,0 +1,11 @@
+select car , cylinders , weight
+from cars where cylinders IN (SELECT DISTINCT("cylinders") from cars where weight < 2000) ORDER BY weight DESC
+select car , cylinders , weight from cars where cylinders
+IN (SELECT DISTINCT("cylinders") from cars where weight
+	IN (SELECT MIN("weight") from cars where origin = 'japan'))
+                                         ORDER BY weight DESC
+WITH CTE_CARS AS(
+	select car , weight , origin from cars
+	where origin = 'europe' and Cylinders > 5
+)
+select * from CTE_CARS where weight < 4000
