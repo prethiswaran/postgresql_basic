@@ -1,0 +1,26 @@
+create table my_courses
+select * from my_courses
+(
+"id" char(3) primary key not null,
+"course" varchar(100) not null,
+"free" integer not null,
+"duration" integer not null
+)
+insert into my_courses
+values('001', 'python for everyone', 5999, 40)
+insert into my_courses
+values('002', 'python advanced developer', 11999, null)
+insert into my_courses
+("id", "course", "free")
+values
+('003', 'python for datascience', 11999)
+
+create table employee (eid int,ename varchar (50),age int,dept text,salary numeric (7,2))
+select * from employee
+alter table employee add column exp int
+alter table employee alter column exp type text
+alter table employee drop column exp
+insert into employee values (102,'nivrithy',22, 'full stack deveolper',45000), (103, 'mirra',23,'st',35000), (104,'gunasekar',24,'se', 55000)
+update employee set salary =55000 where eid = 102
+delete from employee where eid =103
+insert into employee values (106,'akilla',21, 'trainer',null)
