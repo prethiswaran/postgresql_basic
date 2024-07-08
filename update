@@ -1,0 +1,8 @@
+update my_courses
+set "duration" = 90
+where "course" = 'python for datascience'
+update my_courses
+set "duration" = 90, "free"=14999
+where "course" = 'python advanced developer'
+update my_courses
+set "duration" = (45000)

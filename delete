@@ -1,0 +1,6 @@
+delete from my_courses
+where "id" = '001'
+delete from my_courses
+where "free" > 6000
+delete from  my_courses
+drop table my_courses
