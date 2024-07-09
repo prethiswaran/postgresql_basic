@@ -1,0 +1,14 @@
+--inner join
+select e.eid, e.ename, e.dept, s.salary from employee e, salary s where e.eid = s.eid
+
+--cross join
+select * from employee , salary
+
+--left join
+select * from employee e left join salary s on e.eid = s.eid is null
+
+--right join
+select * from employee e right join salary s on e.eid = s.eid
+
+--full join
+select * from employee e full join salary s on e.eid = s.eid

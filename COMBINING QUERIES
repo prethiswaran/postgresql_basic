@@ -1,0 +1,8 @@
+select * from cars
+select car , "cylinders" from cars where "cylinders" = 6
+union
+select car , "cylinders" from cars where "origin" in ('Japan','Europe')
+select car , "cylinders" from cars where "cylinders" = 6
+union
+select car , "cylinders"  from cars where "origin" in ('Japan','Europe')
+Order by "cylinders" DESC
