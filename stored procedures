@@ -1,0 +1,17 @@
+call insert_courses(999,25, 'new course')
+select * from course
+
+create or replace procedure lostcourse
+(
+id_ integer,
+duration_ integer,
+course_ text
+)
+language plpgsql as
+$$
+begin
+    insert into course ("id", "duration", "course")
+    values (id_, duration_, course_);
+end
+$$
+call lostcourse (101,55,'vijay')
